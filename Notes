@@ -1,0 +1,34 @@
+Anything you see on the browser can be automated using selenium
+Can be used on multiple browsers
+number one automation tool available in the market
+code can be written in multiple languages: Java, c#, Python, Ruby, PHP, Javascript
+Majorly java selenium is used in the industry and java is most popular to use with selenium
+Core concepts is the same, only syntax changes for languages
+Selenium parent had 2 different tools: IDE and Webdriver, IDE is record and playback tool, not used much in real world.
+Webdriver helps create robust browser testing
+Selenium is not a tool its only a jar file
+Selenium is lightweight as there is no tool
+
+Every browser has its own driver session
+When triggering the code for selenium all of the code is converted to JSON format
+
+Read code, get path of bowser driver and pass the code in JSON format
+
+Things required for starting to work on selenium:
+1) Download the latest java version - just download jdk - refer to lecture 8 resources if not sure
+Check for Java folder in C: Program Files or Program Files (x86)
+2) set the java path, get the java home path, go inside the jdk folder and get the path. Got to control panel, select advanced system sesstings
+click on environment variables, add a variable called JAVA_HOME: add the link to the jdk home path
+3) get the bin path of the jdk and add it to path variable on the environment variables under control panel
+4) Refer to lecture 9 for setting JAVAHOME in mac
+5)Eclipse wont open if Java is not installed, you need eclipse ide for java developers
+6) Got to project structure to add selenium jars
+7) Check your chrome browser and make sure its the same version, go to settings in the chrome browser and then about
+8) Get the drivers from the selenium website
+
+MAC Users:
+Setting p chrome driver: Refer to Lecture 17
+
+
+
+
