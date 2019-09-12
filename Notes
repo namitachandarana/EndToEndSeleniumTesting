@@ -30,5 +30,55 @@ MAC Users:
 Setting p chrome driver: Refer to Lecture 17
 
 
+id locator can change when the page is refreshed its important to check and not the most reliable way
+alphanumerice ids (combination of alphabets and letters) not ideal to use to locate elements
+
+Preferable locators to use are CSS and XPath
+
+The object is a link when the a/anchor tag is used
+
+Classnames should not have space, if there are spaces they cannot be used with class name attribute but can be used with xpath attribut
+
+Selenium scrolls from top left , if the value of 2 attributes is the same it will by default select the first one and selenium will not throw an error
+
+XPath Syntax: //*[@attribute='value'], xpaths can also be found by right clicking, copy Xpath
+XPaths Starting with html are not reliable
+
+Below works for firefox and chrome browsers
+$x("") To validate that xpaths are correct go to firefox and on the console type $x("//*[@attribute='value']") Class name can be used instead of regular expression
+$("") To validate that css is correct go to firefox and on the console type $("#id")
+css syntax:
+1) tagname[attribute='value']
+2) Another css syntac = tagname.classname
+3) tagname#id - tagname can be skipped only #id can be used
+4) input#username
 
 
+Regular Expression:
+//tagName[contains(@attribute, 'value')] - xpath
+tagName[attribute*='value']
+
+if attribute value is too long regular expression xpaths and css can be used
+
+XPaths can be identified using parent
+
+Refer to lecture 38 again to understand XPaths
+ChroPath can generate XPath and CSS refer lecture 39
+
+Relative and absolute XPath
+Relative XPath does not depend on parent node Lecture 40
+Absolute XPath depends on parent node
+Relative Xpaths are preferred over absolute XPaths
+
+Syntax to traverse between siblings: .//*[@is='tablist']/following-sibling::li[1]
+
+Major difference between css and xpath is with xpath you can traverse back from child to parent. Cant do that it CSS
+
+Another way to find elements on the screen is by using text only syntax: //*[text() = ' Soap UI']
+
+Parent child relationship is when there is no slash between the 2
+whereas parent child traveresing is when you put / to reach the child
+
+
+
+Areas to revisit: XPaths, Autosuggestive drop downs
